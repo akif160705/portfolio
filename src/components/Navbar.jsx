@@ -19,7 +19,7 @@ export default function Navbar() {
             Akif
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -56,7 +56,7 @@ export default function Navbar() {
 
         {isOpen && (
           <div className="md:hidden border-t border-white/20 px-6 py-4">
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}

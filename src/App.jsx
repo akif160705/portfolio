@@ -7,7 +7,7 @@ import Contact from './components/Contact'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-purple-600 via-blue-500 to-pink-500">
+    <div className="min-h-screen bg-linear-to-br from-[#0a0a1a] via-[#1a1a3a] to-[#0f0f2e]">
       <Navbar />
       <Hero />
       <About />
