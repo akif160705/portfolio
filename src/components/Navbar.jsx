@@ -15,16 +15,16 @@ export default function Navbar() {
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50">
       <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-xl shadow-lg">
         <div className="px-6 py-4 flex items-center justify-between">
-          <div className="text-white font-bold text-xl">
+          <div className="text-white font-bold text-xl tracking-wide">
             Akif
           </div>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-3">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-white/90 hover:text-white transition-colors duration-200 font-medium"
+                className="rounded-full px-4 py-2 text-sm font-semibold text-white/90 transition duration-200 hover:bg-white/15 hover:text-white"
               >
                 {link.name}
               </a>
@@ -56,13 +56,13 @@ export default function Navbar() {
 
         {isOpen && (
           <div className="md:hidden border-t border-white/20 px-6 py-4">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-white/90 hover:text-white transition-colors duration-200 font-medium"
+                  className="rounded-full px-4 py-2 text-sm font-semibold text-white/90 transition duration-200 hover:bg-white/15 hover:text-white"
                 >
                   {link.name}
                 </a>
